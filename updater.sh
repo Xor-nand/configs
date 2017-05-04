@@ -44,5 +44,5 @@ case $c in
 	echo ' error: invalid answer ';exit 1
 	;;
 esac
-echo bye
+echo " bye"
 exit 0

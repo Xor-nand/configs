@@ -64,13 +64,21 @@ mode "resize" {
 	}
 
 # media player
-mode "play" {
+mode "player" {
+
+	bindsym p exec pavucontrol
 
 	# Media player controls
 	bindsym i exec playerctl play
 	bindsym k exec playerctl pause
 	bindsym l exec playerctl next
 	bindsym j exec playerctl previous
+
+	# volume control
+	bindsym u exec --no-startup-id pactl set-sink-volume 0 -5%
+	bindsym o exec --no-startup-id pactl set-sink-volume 0 +5%
+	# mute sound
+	bindsym m exec --no-startup-id pactl set-sink-mute 0 toggle
 
 	# enter : back, escape : reset
 	bindsym Return mode "default"
@@ -306,3 +314,12 @@ exec conky
 # I FUCKING hate vi/vim (and yes, I can't use it.)
 exec export EDITOR=nano
 exec export VISUAL=nano
+
+for_window [class="Pavucontrol"] floating enable
+for_window [class="Lxappearance"] floating enable
+for_window [class="Termite"] floating enable
+for_window [class="Thunar"]  floating enable
+for_window [class='feh']  floating enable
+for_window [class='Feh']  floating enable
+for_window [class='vlc']  floating enable
+for_window [class='Vlc']  floating enable
