@@ -3,11 +3,13 @@ mkdir backup
 
 function moveout {
 
+	echo " > git-i3 to i3"
 	mv ~/.config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf.old
 	cp $dir/i3/config ~/.config/i3/config
+	echo " > git-i3blocks to i3blocks"
 	mv ~/.config/i3/config ~/.config/i3/config.old
 	cp $dir/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
-
+	echo " > git-termite to termite"
 	mv ~/.config/termite/config ~/.config/termite/config.old
 	cp $dir/termite/config ~/.config/termite/config
 
