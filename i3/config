@@ -318,9 +318,10 @@ exec export VISUAL=nano
 # deactivate keyboard
 exec xinput float 16
 
+# floating windows
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Lxappearance"] floating enable
-for_window [class="Termite"] floating enable
+#for_window [class="Termite"] floating enable
 for_window [class="Thunar"]  floating enable
 for_window [class='feh']  floating enable
 for_window [class='Feh']  floating enable
