@@ -315,8 +315,8 @@ exec conky
 exec export EDITOR=nano
 exec export VISUAL=nano
 
-# deactivate keyboard
-exec xinput float 16
+# deactivate keyboard (I use mechanical usb keyboard instead of it)
+#exec xinput float 16
 
 # floating windows
 for_window [class="Pavucontrol"] floating enable
