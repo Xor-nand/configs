@@ -15,7 +15,7 @@ The packages you need are :
 - `termite`, a great and customizable terminal emulator,
 - `udiskie`, to auto-mount usb drives,
 - `xbacklight`, for the backlight,
-- `lxappearance`, a tweak tool,
+- `lxappearance`, a tweak tool, and `arc dark` installer,
 - `thunar`, our trusted file manager,
 - `compton`, just to make everything a bit more cute,
 - `scrot`, screenshot tool,
