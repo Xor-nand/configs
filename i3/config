@@ -315,6 +315,9 @@ exec conky
 exec export EDITOR=nano
 exec export VISUAL=nano
 
+# deactivate keyboard
+exec xinput float 16
+
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Lxappearance"] floating enable
 for_window [class="Termite"] floating enable
